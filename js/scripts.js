@@ -5,3 +5,13 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+function search(){
+	let p = document.getElementById("p,h");
+	let input = document.getElementById("navbarSupportedContent").value;
+	
+	if (input !== ""){
+		let regExp = new RegExp(input, "gi");
+		p.innerHTML = ,(p.textContent).replace(regExp, "< mark>$&</mark>");
+	}
+	
+}
