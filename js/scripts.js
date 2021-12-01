@@ -5,13 +5,17 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-function search(){
-	let p = document.getElementById("p,h");
-	let input = document.getElementById("navbarSupportedContent").value;
-	
-	if (input !== ""){
-		let regExp = new RegExp(input, "gi");
-		p.innerHTML = ,(p.textContent).replace(regExp, "< mark>$&</mark>");
-	}
-	
+ function search_animal() {
+    let input = document.getElementById('products').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
 }
