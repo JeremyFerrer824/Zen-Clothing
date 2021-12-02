@@ -209,6 +209,10 @@ strong {
   font-weight: bolder;
 }
 
+Search {
+	my-
+}
+
 small, .small {
   font-size: 0.875em;
 }
@@ -305,6 +309,8 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
 }
+
+
 
 caption {
   padding-top: 0.5rem;
